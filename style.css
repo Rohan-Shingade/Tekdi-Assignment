@@ -6,6 +6,7 @@
 
 .logo {
   height: 10px !important;
+  box-shadow: 10 10 6px grey;
 }
 
 ul li a {
