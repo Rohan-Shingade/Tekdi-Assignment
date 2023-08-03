@@ -98,6 +98,7 @@ html {
 
 .digi-trans .digital-content .digi-title {
   color: black;
+  padding: 25px;
   font-size: 35px;
   font-weight: 500;
   margin-top: 20px !important;
@@ -138,12 +139,11 @@ html {
   scale: 110%;
 }
 
-
 .digi-trans .slider .card .card-body a {
   text-decoration: none;
   color: #09D2D4;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
   border: none;
   outline: none;
   background: transparent;
@@ -164,4 +164,87 @@ html {
 
 .digi-trans .slider .card .card-body a:hover::after {
   transform: scaleX(1);
+}
+
+
+/* ===================== Success Stories ========================= */
+.success-stories .title{
+  margin-top: 35px;
+  margin-bottom: 45px;
+  font-size: 40px !important;
+  font-weight: 500;
+}
+
+.success-stories .container {
+  display: flex;
+}
+
+
+.success-stories .container .card {
+  background: #09225a;
+  color: white;
+  border-radius: 0%;
+  height: 350px;
+  padding: 10px;
+}
+
+.success-stories .container .card .card-title {
+  font-size: 23px;
+}
+.success-stories .container .card .card-text {
+  font-size: 18px;
+  visibility: hidden;
+  margin-bottom: 8px !important;
+}
+
+.success-stories .container .card a {
+  visibility: hidden;
+
+}
+
+.success-stories .container .card:hover {
+  color: white;
+  height: 430px;
+  background: rgb(20,111,153);
+  background: linear-gradient(124deg, rgba(20,111,153,1) 0%, rgba(11,185,225,1) 56%);
+}
+
+.success-stories .container .card:hover .card-text {
+  visibility: visible;
+}
+
+.success-stories .container .card:hover a {
+  visibility: visible;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.success-stories .container .card:hover a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.success-stories .container .card:hover a:hover::after {
+  transform: scaleX(1);
+}
+
+/* ===================== Industries ========================= */
+.industries .title {
+  margin-top: 50px !important;
+  margin-bottom: 45px;
+  font-size: 40px !important;
+  font-weight: 500;
 }
