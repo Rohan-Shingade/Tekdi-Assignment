@@ -13,3 +13,9 @@ $(document).ready(function(){
 $(document).ready(function() {
   $("#myCarousel").carousel();
 });
+
+//toggle menu / navbar for mobie devices
+$('.menu-btn').click(function(){
+  $('.navbar .menu').toggleClass('active');
+  $('.menu-btn i').toggleClass('active');
+});
