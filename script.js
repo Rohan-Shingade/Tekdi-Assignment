@@ -8,3 +8,8 @@ $(document).ready(function(){
     }
     })
   });
+
+ // Initialize the carousel
+$(document).ready(function() {
+  $("#myCarousel").carousel();
+});

@@ -131,6 +131,7 @@ html {
 
 .digi-trans .slider .card img {
   transition: scale 400ms;
+  margin-right: 25px;
 }
 
 .digi-trans .slider .card img:hover {
