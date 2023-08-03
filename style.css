@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+
 }
 
 html {
@@ -40,28 +44,123 @@ html {
   width: 1024px;
 }
 
-.navbar li:hover {
-  background: #0f65b2;
+.menu ul li a {
+  color: black;
 }
 
-.menu ul li a{
-  color: #111 !important;
+.menu ul li a:hover {
+  background: #0f65b2 !important;
+  color: white
 }
 
-.menu .dropdown-menu li a{
-  color: black !important;
-}
-
+/* Home section Styling */
 .home {
   background: url("/images/darkcomputer.png") no-repeat center !important;
   background-size: cover;
-  background-position: center !important;
-  object-fit: cover !important;
-  height: 100vh !important;
+  background-position: fixed ;
+  object-fit: cover ;
+  height: 100vh ;
   color: #fff;
   z-index: 99999;
 }
 
 .home .max-width {
+  margin: auto 0 auto 40px;
+  width: 100%;
+  display: flex;
+}
+
+.home .home-content .text1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 300px !important;
+  margin-left: 90px !important;
   
+}
+
+.home .home-content .text2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 90px !important;
+}
+
+/* ===================== digital transformation ========================= */
+
+.digi-trans {
+  margin-top: 50px;
+  background: #f1f1f1;
+}
+
+.digi-trans .max-width .container {
+  width: 35%;
+  margin-left: 250px;
+}
+
+.digi-trans .digital-content .digi-title {
+  color: black;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 20px !important;
+}
+
+.digi-trans .digital-content p {
+  color: #65738E;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.digi-trans .digital-content .scroll-btn {
+  justify-content: end !important;
+}
+
+.digi-trans .digital-content .slider {
+  display: flex !important;
+  cursor: grab;
+}
+
+.digi-trans .digital-content .slider .card {
+  display: flex;
+  padding: 20px;
+  width: 45%;
+  background: #f1f1f1;
+  border: none;
+  margin-left: 20px;
+}
+
+
+
+.digi-trans .slider .card img {
+  transition: scale 400ms;
+}
+
+.digi-trans .slider .card img:hover {
+  scale: 110%;
+}
+
+
+.digi-trans .slider .card .card-body a {
+  text-decoration: none;
+  color: #09D2D4;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.digi-trans .slider .card .card-body a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #09D2D4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.digi-trans .slider .card .card-body a:hover::after {
+  transform: scaleX(1);
 }
