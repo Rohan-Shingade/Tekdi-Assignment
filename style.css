@@ -55,7 +55,7 @@ html {
 
 /* Home section Styling */
 .home {
-  background: url("/images/darkcomputer.png") no-repeat center !important;
+  background: url("/images/bg-home.jpg") no-repeat center;
   background-size: cover;
   background-position: fixed ;
   object-fit: cover ;
@@ -169,8 +169,8 @@ html {
 
 /* ===================== Success Stories ========================= */
 .success-stories .title{
-  margin-top: 35px;
-  margin-bottom: 45px;
+  margin-top: 80px;
+  margin-bottom: 70px;
   font-size: 40px !important;
   font-weight: 500;
 }
@@ -242,9 +242,18 @@ html {
 }
 
 /* ===================== Industries ========================= */
+
+
 .industries .title {
-  margin-top: 50px !important;
+  margin-top: 50px;
   margin-bottom: 45px;
   font-size: 40px !important;
   font-weight: 500;
+}
+
+.industries .data {
+  font-size: 18px;
+  font-weight: 400;
+  width: 40%;
+  color: #7f8081;
 }
