@@ -431,11 +431,11 @@ html {
   background-color: aqua;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease !important;
 }
 
 #sec2 button:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(1) !important;
 }
 
 #sec3 {
@@ -453,4 +453,47 @@ html {
 
 #sec4 img {
   margin-left: 38px;
+}
+
+.container .img-slider {
+  display: flex;
+}
+
+.slider-container {
+  width: 90%; 
+  margin: 15px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.3s ease !important;
+}
+
+.slider img {
+  width: 25%;
+  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
 }
