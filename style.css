@@ -31,7 +31,7 @@ html {
   width: 100%;
   padding: 30px 0;
   transition: all 0.3s ease;
-  z-index: 99;
+  z-index: 9999;
 }
 
 .navbar.sticky {
@@ -132,13 +132,14 @@ html {
   background: #f1f1f1;
   border: none;
   margin-left: 20px;
+  
 }
 
-
-
 .digi-trans .slider .card img {
+  height: 100px;
+  width: auto;
   transition: scale 400ms;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .digi-trans .slider .card img:hover {
@@ -347,6 +348,7 @@ html {
 
 /* ========================= Products ========================= */
 
+
 .products .title {
   margin-top: 180px !important;
   margin-bottom: 45px;
@@ -441,6 +443,7 @@ html {
 #sec3 {
   background: #17b1cf;
   color: #fff;
+  height: 355px;
 }
 
 #sec3 img {
@@ -449,6 +452,7 @@ html {
 #sec4 {
   background: #1271bb;
   color: #fff;
+  height: 355px;
 }
 
 #sec4 img {
@@ -493,4 +497,112 @@ html {
 
 .next-button {
   right: 10px;
+}
+
+
+/* ========================= Business Form ========================= */
+
+.busi-form{
+  background: url("/images/transform-banner.jpg")no-repeat center;
+  color: #fff;
+  background-size: cover;
+  object-fit: cover;
+  height: 60vh;
+}
+
+
+.busi-form .title {
+  margin-top: 180px !important;
+  margin-bottom: 45px;
+  font-size: 40px !important;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.busi-form .row1 input {
+  background-color: rgba(96, 95, 95, 0.5);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 9px;
+  margin-right: 15px;
+  height: 30px;
+}
+
+.row2 #msg {
+  background-color: rgba(96, 95, 95, 0.5);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 9px;
+  margin-top: 20px;
+}
+
+.busi-form button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 19px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.busi-form button::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+button:hover::after {
+  transform: scaleX(1);
+}
+
+/* ========================= Footer ========================= */
+
+.footer {
+  background: #09225a;
+  padding: 50px 15% 10px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.footer h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col {
+  flex-basis: 20%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row {
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+
+.copyright {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #0f65b2;
 }
